@@ -1,0 +1,16 @@
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="Alura\Doctrine\Entity\Cliente" table="cliente">
+        <indexes>
+            <index columns="ultimo_nome" name="idx_ultimo_nome_cliente" />
+        </indexes>
+
+        <unique-constraints>
+            <unique-constraint columns="primeiro_nome,ultimo_nome"
+                               name="idx_nome_completo_cliente_unique" />
+        </unique-constraints>
+
+        <id name="id" column="id_cliente" type="integer">
+            <generator strategy="IDENTITY" />
+        </id>
+    </entity>
+</doctrine-mapping>
