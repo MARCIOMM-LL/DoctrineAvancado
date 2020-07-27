@@ -2,6 +2,8 @@
 
 namespace Alura\Doctrine\Entity;
 
+use Alura\Doctrine\Entity\Filme;
+use Alura\Doctrine\Entity\Pessoa;
 use Doctrine\Common\Collections\ArrayCollection;
 
 class Ator extends Pessoa
@@ -12,7 +14,9 @@ class Ator extends Pessoa
         ?int $id,
         string $primeiroNome,
         string $ultimoNome
-    ) {
+    )
+    {
+        // A propriedade parent chama o contrutor da classe base
         parent::__construct($id, $primeiroNome, $ultimoNome);
         $this->filmes = new ArrayCollection();
     }

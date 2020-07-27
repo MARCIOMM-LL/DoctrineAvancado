@@ -18,9 +18,9 @@ class EntityManagerCreator
         $con = [
             'driver' => 'pdo_pgsql',
             'host' => 'localhost',
-            'dbname' => 'alura_filmes',
+            'dbname' => 'alura_filmes_novo',
             'user' => 'postgres',
-            'password' => 'senhalura',
+            'password' => '1112',
         ];
         Type::addType(
             'classificacao',
