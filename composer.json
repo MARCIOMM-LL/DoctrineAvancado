@@ -1,0 +1,20 @@
+{
+    "name": "miranda/doctrine",
+    "description": "Projeto doctrine",
+    "authors": [
+        {
+            "name": "Márcio",
+            "email": "m-andremiranda@outlook.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.6",
+        "symfony/yaml": "^4.3",
+        "myclabs/php-enum": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alura\\Doctrine\\": "src/" 
+        }
+    }
+}
